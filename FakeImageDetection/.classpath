@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/Fake Image Detection.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="dist/lib/ij.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jfoenix.jar"/>
+	<classpathentry kind="lib" path="dist/lib/logback-classic-1.1.7.jar"/>
+	<classpathentry kind="lib" path="dist/lib/logback-core-1.1.7.jar"/>
+	<classpathentry kind="lib" path="dist/lib/metadata-extractor-2.9.1.jar"/>
+	<classpathentry kind="lib" path="dist/lib/neuroph-core-2.92.jar"/>
+	<classpathentry kind="lib" path="dist/lib/neuroph-imgrec-2.92.jar"/>
+	<classpathentry kind="lib" path="dist/lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xmpcore-5.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/ij.jar"/>
+	<classpathentry kind="lib" path="lib/jfoenix.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-1.1.7.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-1.1.7.jar"/>
+	<classpathentry kind="lib" path="lib/metadata-extractor-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/neuroph-core-2.92.jar"/>
+	<classpathentry kind="lib" path="lib/neuroph-imgrec-2.92.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="lib/xmpcore-5.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell/Desktop/MAJOR_PROJECT/major final/jython-standalone-2.7.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gc.fakeimagedetection.ui.controllers.LaunchScreeenController">
+   <center>
+      <StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#loadAnimation" prefHeight="959.0" prefWidth="1658.0" styleClass="launch_panel" stylesheets="@../stylesheets/main.css">
+          <children>
+              <ImageView fx:id="backgroundImageView" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                      <Image url="@infinity.png" />
+                  </image>
+                  <effect>
+                      <GaussianBlur radius="0.64" />
+                  </effect>
+              </ImageView>
+              <AnchorPane fx:id="anchorPane" prefHeight="407.0" prefWidth="632.0" stylesheets="@../stylesheets/main.css">
+                  <children>
+                      <Text fx:id="description"  layoutX="500.0" fill="WHITE" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--Fake Image Detector--" textAlignment="CENTER" wrappingWidth="936.6666773557663" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="300.0" AnchorPane.rightAnchor="-13.666677355766296">
+                          <font>
+                              <Font name="Roboto Light" size="40.0" />
+                          </font>
+                          <effect>
+                              <DropShadow color="#110101" height="172.79" radius="88.93" spread="0.13" width="184.93" />
+                          </effect>
+                      </Text>
+                      
+                      <Text fx:id="description1"  layoutX="500.0" fill="WHITE" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major Project(HCOE) " textAlignment="CENTER" wrappingWidth="936.6666773557663" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="840.0" AnchorPane.rightAnchor="-13.666677355766296">
+                          <font>
+                              <Font name="Roboto Light" size="45.0" />
+                          </font>
+                      </Text>                      
+                      
+                      <Text fx:id="christopher" fontSmoothingType="LCD" layoutX="600.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image forgery Detection" textAlignment="CENTER" wrappingWidth="920.3333706588019" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="0.0">
+                          <font>
+                              <Font name="Roboto Light" size="48.0" />
+                          </font>
+                          <fill>
+                              <LinearGradient endX="0.8942307692307693" endY="1.0" startX="0.0721153846153846">
+                                  <stops>
+                                      <Stop color="#46ff7de3" />
+                                      <Stop color="#24d3b3" offset="1.0" />
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                          <effect>
+                              <Glow level="1.0" />
+                          </effect>
+                      </Text>
+                      <JFXButton fx:id="load_image_button" buttonType="RAISED" layoutX="950.0" layoutY="560.0" onAction="#loadImageSelector" prefHeight="118.0" prefWidth="122.0" ripplerFill="#96e6fc" styleClass="load_image_button" stylesheets="@../stylesheets/main.css" text="Select Image">
+                          <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                          </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </JFXButton>
+                      
+                    <JFXButton fx:id="load_image_for_copy_move" layoutX="550.0" layoutY="560.0" onAction="#loadImageSelectorCopyMove" prefHeight="118.0" prefWidth="122.0" ripplerFill="#96e6fc" styleClass="load_image_for_copy_move" stylesheets="@../stylesheets/main.css" text="copy move test">
+                          <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                          </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </JFXButton>
+                      
+                      
+                      <ImageView fx:id="homeIcon" fitHeight="63.0" fitWidth="62.0" layoutX="1500.0" layoutY="19.0" onMouseClicked="#rollBack" pickOnBounds="true" preserveRatio="true" visible="false">
+                          <image>
+                              <Image url="@home.png" />
+                          </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </ImageView>
+                  </children>
+              </AnchorPane>
+          </children>
+      </StackPane>
+   </center>
+</BorderPane>
